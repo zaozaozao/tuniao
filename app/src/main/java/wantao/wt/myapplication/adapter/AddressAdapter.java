@@ -21,7 +21,6 @@ import wantao.wt.myapplication.databinding.AddAddresItemBinding;
  */
 
 public class AddressAdapter extends BaseAdapter implements View.OnClickListener{
-
     List<AddressBean.MsgBean> list;
     LayoutInflater inflater;
 

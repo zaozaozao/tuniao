@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools">
+
+<data>
+    <variable
+        name="carType"
+        type="wantao.wt.myapplication.bean.CarType.MsgBean.DataBean"/>
+
+</data>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/simpledraweeview"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            fresco:fadeDuration="400"
+            app:imageUrl="@{carType.name}"
+            fresco:failureImage="@mipmap/ic_launcher"
+            fresco:failureImageScaleType="fitXY" />
+        <TextView
+            android:text="@{carType.name}"
+            android:layout_margin="10dp"
+            android:lines="1"
+            android:layout_toRightOf="@id/simpledraweeview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</layout>

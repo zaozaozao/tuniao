@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/favorite"
+            android:icon="@mipmap/c_dingdan"
+            android:title="地址管理" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/wallet"
+            android:icon="@mipmap/c_zhanghu"
+            android:title="个人认证" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/photo"
+            android:icon="@mipmap/c_tuniao"
+            android:title="测试1" />
+    </group>
+    <group>
+        <item
+            android:id="@+id/file"
+            android:icon="@mipmap/c_dizhi"
+            android:title="我的订单" />
+    </group>
+</menu>

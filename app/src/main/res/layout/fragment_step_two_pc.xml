@@ -1,0 +1,107 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="stepTwoPCFragment"
+            type="wantao.wt.myapplication.personcertification.StepTwoPCFragment"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="wantao.wt.myapplication.personcertification.StepTwoPCFragment">
+
+
+        <ImageView
+            android:id="@+id/iv_jindu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/geren2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/dian"
+            android:gravity="center_vertical"
+            android:text="身份证正反照"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:onClick="@{stepTwoPCFragment::getIdImage}"
+            android:id="@+id/iv_card_img_2"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/sfzz" />
+
+        <ImageView
+            android:onClick="@{stepTwoPCFragment::getIdImage}"
+            android:id="@+id/iv_card_img_3"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@mipmap/sfzf" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/iv_agree_flag"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:button="@null"
+                android:background="@drawable/checkbox_agree_selecor" />
+
+            <TextView
+                android:id="@+id/tv_agree_flag"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:gravity="left|center_vertical"
+                android:text="同意"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_agree"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:gravity="left|center_vertical"
+                android:text="《途鸟配送服务协议》"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <Button
+            android:onClick="@{stepTwoPCFragment::isValidate2}"
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/layout"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/btn_login_selector"
+            android:gravity="center"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </LinearLayout>
+</layout>

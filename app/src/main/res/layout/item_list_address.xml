@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="address"
+            type="wantao.wt.myapplication.bean.AddressBean.MsgBean"/>
+
+        <variable
+            name="drGoodsFragment"
+            type="wantao.wt.myapplication.myaddress.DrGoodsFragment"/>
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/tv_address1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/addres_dz"
+            android:drawablePadding="5dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="@{address.addr1+'\t'+'\t'+address.addr2}"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableLeft="@mipmap/addres_dh"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:text="@{address.phone}"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="right"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_set_default"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/btn_set_default_address_selector"
+                android:gravity="center"
+                android:text="设置默认"
+                android:onClick="@{drGoodsFragment::setDefaultAddress}"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+
+            <Button
+                android:onClick="@{drGoodsFragment::deleteAddress}"
+                android:id="@+id/btn_del"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/btn_login_selector"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/white"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+        <variable
+            name="order"
+            type="wantao.wt.myapplication.bean.OrderBean"/>
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="03月05日 06：00"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_chexing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_time"
+                android:background="@drawable/viewstyledj"
+                android:text="货运"
+                android:textColor="@color/yellow"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_zhuangtai"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:text="待收货"
+                android:textColor="@color/yellow"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tv_f_address"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:drawableLeft="@mipmap/addres_fa"
+            android:drawablePadding="2dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="东山康城东山康城"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_d_address"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:drawableLeft="@mipmap/addres_end"
+            android:drawablePadding="2dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="东山康城东山康城"
+            android:textColor="@color/black"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_yufei"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_vertical"
+            android:text="运费：1200元"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="28dp"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_quhuoma"
+                android:layout_width="110dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_login_selectd"
+                android:gravity="center"
+                android:text="取货码：6666"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+
+            <Button
+                android:id="@+id/btn_lujing"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/btn_login_selector"
+                android:gravity="center"
+                android:text="路径追踪"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/btn_quxiao"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_login_selector"
+                android:gravity="center"
+                android:text="取消订单"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+</layout>

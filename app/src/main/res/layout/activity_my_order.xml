@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:orientation="vertical"
+        tools:context="wantao.wt.myapplication.myorder.MyOrderActivity">
+
+        <include layout="@layout/include_head" />
+
+        <wantao.wt.myapplication.view.CustomTabLayout
+            android:id="@+id/tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:paddingEnd="12dp"
+            app:paddingStart="12dp"
+            app:tabIndicatorColor="@color/yellow"
+            app:tabMode="scrollable"
+            app:tabSelectedTextColor="@color/yellow"
+            app:tabTextColor="@color/black">
+
+        </wantao.wt.myapplication.view.CustomTabLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+    </LinearLayout>
+</layout>

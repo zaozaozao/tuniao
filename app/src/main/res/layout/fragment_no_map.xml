@@ -1,0 +1,30 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="wantao.wt.myapplication.tuniao.NoMapFragment">
+
+
+        <wantao.wt.myapplication.view.CustomTiteBar
+            android:id="@+id/titleBar"
+            android:background="?attr/colorPrimary"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:overScrollMode="ifContentScrolls"
+            android:scrollbars="none"
+            android:paddingRight="10dp"
+            android:layout_height="30dp">
+
+        </wantao.wt.myapplication.view.CustomTiteBar>
+
+        <TextView
+            android:gravity="center"
+            android:text="NoMap"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+</layout>
